@@ -1,55 +1,93 @@
 {
-  "title":"Você seria um heroi ou vilão ?",
+  "title":"Qual Villanueva você seria?",
   "questions":[
     {
       "id":1,
-      "question": "Qual super poder você escolheria ?",
+      "question": "Qual é a sua abordagem em relação a riscos e aventuras?",
       "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+        {"id": 1, "name":"Adoro me aventurar e explorar o desconhecido, mesmo que isso signifique enfrentar perigos.", "alias":"5"},
+        {"id": 2, "name":"Prefiro evitar riscos desnecessários e buscar segurança e estabilidade.", "alias":"3"},
+        {"id": 3, "name":"Estou disposto(a) a correr alguns riscos calculados em busca de novas experiências.", "alias":"1"}
+
       ]
     },
     {
       "id":2,
-      "question": "Quem você salvaria primeiro ?",
+      "question": "Como você lida com a pressão da sociedade em relação às expectativas de gênero?",
       "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+        {"id": 1, "name":"Às vezes me sinto pressionado(a) pelas expectativas de gênero, mas tento encontrar um equilíbrio entre o que é esperado de mim e quem eu realmente sou.", "alias":"3"},
+        {"id": 2, "name":"Acho importante desafiar as normas de gênero e lutar por igualdade e liberdade para todos os indivíduos.", "alias":"5"},
+        {"id": 3, "name":"Acredito que cada gênero tem seu papel na sociedade e tento me conformar com essas expectativas.", "alias":"1"}
       ]
     },
     {
       "id":3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+      "question": "Como você lida com conflitos familiares?",
       "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+        {"id": 1, "name":"Prefiro evitar conflitos familiares e às vezes recuo para manter a paz.", "alias":"5"},
+        {"id": 2, "name":"Me baseio em tradições para resolver problemas familiáres", "alias":"1"},
+        {"id": 3, "name":"Às vezes os conflitos familiares podem ser difíceis de lidar, mas busco encontrar soluções pacíficas.", "alias":"3"}
+
       ]
     },
     {
       "id":4,
-      "question": "Qual o seu maior foco ?",
+      "question": "Com qual frequência você vai a igreja?",
       "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+        {"id": 1, "name":"Nunca", "alias":"5"},
+        {"id": 2, "name":"As vezes", "alias":"3"},
+        {"id": 3, "name":"Sempre", "alias":"1"}
       ]
     },
     {
       "id":5,
-      "question": "Qual o seu apelido de super ser ?",
+      "question": "Como você encara o amor e o romance?",
       "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+        {"id": 1, "name":"Acredito no amor verdadeiro, mas às vezes a realidade pode ser um pouco mais complicada do que os contos de fadas.", "alias":"3"},
+        {"id": 2, "name":"Amor é uma das coisas mais importantes da vida, e vale a pena lutar por ele, mesmo que isso signifique enfrentar desafios.", "alias":"5"},
+        {"id": 3, "name":"O amor é algo sagrado e deve ser cultivado com muita paciência e devoção.", "alias":"1"}
+      ]
+    },
+    {
+      "id":6,
+      "question": "Como você reage a conflitos externos aos da sua família?",
+      "options":[
+        {"id": 1, "name":"Fujo e me escondo", "alias":"1"},
+        {"id": 2, "name":"Tento resolver deixando tudo organizado do meu jeito", "alias":"3"},
+        {"id": 3, "name":"Tiro porrada e bomba", "alias":"5"}
+      ]
+    },
+    {
+      "id":7,
+      "question": "O que você faria se descobrisse que está em uma novela?",
+      "options":[
+        {"id": 1, "name":"Aproveitaria a oportunidade para viver aventuras emocionantes e quem sabe até encontrar o amor da minha vida nos bastidores.", "alias":"5"},
+        {"id": 2, "name":"Ficaria chocado(a) e tentaria descobrir como sair dessa situação absurda.", "alias":"1"},
+        {"id": 3, "name":"Aceitaria a situação envergonhada e tentaria descobrir como usar meu conhecimento da novela a meu favor.", "alias":"3"}
+      ]
+    },
+    {
+      "id":8,
+      "question": "Como você reage quando se mete em uma situação embaraçosa?",
+      "options":[
+        {"id": 1, "name":"Fico completamente sem graça e tento encontrar um buraco para me esconder.", "alias":"1"},
+        {"id": 2, "name":"Dou uma risada nervosa e tento contornar a situação da melhor forma possível.", "alias":"3"},
+        {"id": 3, "name":"Abraço a situação e faço uma piada sobre isso para aliviar a tensão.", "alias":"5"}
+      ]
+    },
+    {
+      "id":9,
+      "question": "Se você fosse um prato de comida, qual seria?",
+      "options":[
+        {"id": 1, "name":"Algo versátil e equilibrado, tipo arroz e feijão, que agrada a diversos paladares.", "alias":"3"},
+        {"id": 2, "name":"Um prato tradicional e reconfortante, como uma sopa caseira.", "alias":"1"},
+        {"id": 3, "name":"Uma explosão de sabores e temperos, algo exótico e ousado.", "alias":"5"}
       ]
     }
   ],
   "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+    "1": "Você é a Abuela!",
+    "3": "Você é a Jane!",
+    "5": "Você é a Xiomara!"
   }
 }

@@ -14,11 +14,11 @@ export class QuizzComponent implements OnInit {
   questions:any
   questionSelected:any
 
-  answers:string[] = []
+  answers:number[] = [] // Alterado o tipo do array para números
   answerSelected:string =""
 
-  questionIndex:number =0
-  questionMaxIndex:number=0
+  questionIndex:number = 0
+  questionMaxIndex:number = 0
 
   finished:boolean = false
 
@@ -42,9 +42,10 @@ export class QuizzComponent implements OnInit {
   }
 
   playerChoose(value:string){
-    this.answers.push(value)
-    this.nextStep()
-
+    
+    this.answers.push(Number(value));
+    console.log(value);
+    this.nextStep();
   }
 
   async nextStep(){
@@ -53,26 +54,30 @@ export class QuizzComponent implements OnInit {
     if(this.questionMaxIndex > this.questionIndex){
         this.questionSelected = this.questions[this.questionIndex]
     }else{
-      const finalAnswer:string = await this.checkResult(this.answers)
-      this.finished = true
-      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results ]
+
+      const average:string = await this.calculateAverage(this.answers);
+      this.finished = true;
+      const averageIndex = average as keyof typeof quizz_questions.results;
+      this.answerSelected = quizz_questions.results[averageIndex];
     }
   }
 
-  async checkResult(anwsers:string[]){
-
-    const result = anwsers.reduce((previous, current, i, arr)=>{
-        if(
-          arr.filter(item => item === previous).length >
-          arr.filter(item => item === current).length
-        ){
-          return previous
-        }else{
-          return current
-        }
-    })
-
-    return result
+  async calculateAverage(numbers:number[]){
+    if (numbers.length === 0) {
+        throw new Error("O array de números está vazio.");
+    }
+  
+    const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    const average = sum / numbers.length;
+    console.log(average)
+    const roundedAverage = this.roundToNearest(average, [1, 3, 5]);
+    const roundedString = roundedAverage.toString();
+    console.log(roundedString);
+    return roundedString;
   }
 
+  // Função auxiliar para arredondar para o número mais próximo de uma lista de valores
+  roundToNearest(value:number, array:number[]):number {
+    return array.reduce((prev, curr) => (Math.abs(curr - value) < Math.abs(prev - value) ? curr : prev));
+  }
 }
